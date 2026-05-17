@@ -1,13 +1,13 @@
-print("=== Simple Calculator ===")
+print("Simple Calculator")
 
-num1 = float(input("Pehla number daalo: "))
-num2 = float(input("Dusra number daalo: "))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-print("Operation choose karo:")
-print("1. Add (+)")
-print("2. Subtract (-)")
-print("3. Multiply (*)")
-print("4. Divide (/)")
+print("Choose operation:")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
 
 choice = input("Enter choice (1/2/3/4): ")
 
@@ -24,7 +24,7 @@ elif choice == "4":
     if num2 != 0:
         print("Result:", num1 / num2)
     else:
-        print("Error: Zero se divide nahi hota")
+        print("Cannot divide by zero")
 
 else:
     print("Invalid choice")
